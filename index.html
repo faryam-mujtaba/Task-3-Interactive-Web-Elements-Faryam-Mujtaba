@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta 
+    name="description" 
+    content="Interactive web elements project using HTML, CSS, and JavaScript." 
+  />
+
+  <title>Task 3 | Interactive Web Elements</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="logo">Interactive UI</a>
+
+      <button class="theme-btn" id="themeToggle">
+        Dark Mode
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <p class="tagline">Frontend Development Project 3</p>
+
+        <h1>Interactive Web Elements</h1>
+
+        <p class="hero-description">
+          A JavaScript-based webpage with buttons, toggles, dynamic content updates,
+          project filtering, and real-time user interaction.
+        </p>
+
+        <button class="primary-btn" id="greetingBtn">
+          Show Greeting
+        </button>
+
+        <p class="dynamic-message" id="greetingMessage">
+          Click the button to see a dynamic message.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Interactive Features</h2>
+        <p>Click the buttons below to interact with the webpage.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Click Counter</h3>
+          <p>You clicked the button <span id="clickCount">0</span> times.</p>
+          <button class="card-btn" id="counterBtn">Click Me</button>
+        </article>
+
+        <article class="feature-card">
+          <h3>Show / Hide Content</h3>
+          <p id="toggleText">
+            This content can be shown or hidden using JavaScript.
+          </p>
+          <button class="card-btn" id="toggleContentBtn">Hide Content</button>
+        </article>
+
+        <article class="feature-card">
+          <h3>Change Text</h3>
+          <p id="changeText">
+            This text will change when you click the button.
+          </p>
+          <button class="card-btn" id="changeTextBtn">Change Text</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section">
+      <div class="section-header">
+        <h2>Project Filter</h2>
+        <p>Filter projects by category using JavaScript DOM manipulation.</p>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="html">HTML</button>
+        <button class="filter-btn" data-category="css">CSS</button>
+        <button class="filter-btn" data-category="javascript">JavaScript</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="html">
+          <h3>Portfolio Structure</h3>
+          <p>A semantic HTML structure for a personal portfolio webpage.</p>
+        </article>
+
+        <article class="project-card" data-category="css">
+          <h3>Responsive Layout</h3>
+          <p>A CSS layout using Grid, Flexbox, and media queries.</p>
+        </article>
+
+        <article class="project-card" data-category="javascript">
+          <h3>Interactive UI</h3>
+          <p>A webpage with buttons, toggles, and dynamic content updates.</p>
+        </article>
+
+        <article class="project-card" data-category="javascript">
+          <h3>DOM Manipulation</h3>
+          <p>JavaScript logic that changes webpage content in real time.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Faryam Mujtaba. Task 3 - Interactive Web Elements.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
